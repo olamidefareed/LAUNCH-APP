@@ -7,7 +7,8 @@ module.exports = {
         clifford: '#da373d',
         background: '#F2F4F7',
         bg: '#FFFFFF',
-        green: '#063B27'
+        green: '#063B27',
+        tor: '#CFFF92'
       }
     },
   },
