@@ -2,11 +2,14 @@ import React from 'react'
 import {GiSlicedBread} from 'react-icons/gi'
 import {TiWiFi} from 'react-icons/ti'
 // import {BsGiftFill} from 'react-icons/bs'
+import {MdPeopleOutline} from 'react-icons/md'
+import {GiRank3} from 'react-icons/gi'
+import {AiFillSetting} from 'react-icons/ai'
 
 function homepage() {
   return (
-    <div className='bg-background m-auto font-sans	   w-[600px] rounded-t-2x'>
-        <div className='bg-tor h-[100px] flex justify-between' >
+    <div className='bg-background m-auto font-sans w-[600px] rounded-t-2x'>
+        <div className='bg-tor h-[100px] flex justify-between ' >
             <p className='text-black text-4xl font-bold '>
                 Home
             </p>
@@ -68,12 +71,31 @@ function homepage() {
             </div>
           </div>
         </div>
-        <div className='border-2 text-black flex'>
-          <button className='bg-[#CFFF92] text-[#063B27] text-center w-[100px] h-[100px] justify-center items-center'>
+        <div className='border-2 text-black flex justify-between'>
+          <button className='bg-[#CFFF92] text-[#063B27] text-center w-[150px] h-[100px] justify-center items-center'>
             <TiWiFi size={30} className='mx-auto '/><br></br>
             <p>Timeline</p>
           </button>
+          <div className=' text-black flex'>
+            <button className=' text-[#063B27] text-center w-[150px] h-[100px] justify-center items-center'>
+              <MdPeopleOutline size={30} className='mx-auto '/><br></br>
+              <p>People</p>
+            </button>
+          </div>
+          <div className=' text-black flex'>
+            <button className=' text-[#063B27] text-center w-[150px] h-[100px] justify-center items-center'>
+              <GiRank3 size={30} className='mx-auto '/><br></br>
+              <p>Ranking</p>
+            </button>
+          </div>
+          <div className=' text-black flex'>
+            <button className=' text-[#063B27] text-center w-[150px] h-[100px] justify-center items-center'>
+              <AiFillSetting size={30} className='mx-auto '/><br></br>
+              <p>Settings</p>
+            </button>
+          </div>
         </div>
+        
        </div>
   )
 }
