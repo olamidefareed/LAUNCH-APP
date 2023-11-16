@@ -4,6 +4,8 @@ import SignUp from './pages/signup'
 import Staffsignup from './pages/staffsignup'
 import Staffverify from './pages/staffverification'
 import Redeem from './pages/redeem'
+import Setting from './pages/settingPage'
+import Profile from './pages/profile'
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route path='/staffsignup' element={<Staffsignup />} />
         <Route path='/staffverification' element={<Staffverify />} />
         <Route path='/redeem' element={<Redeem />} />
+        <Route path='/setting' element={<Setting />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </BrowserRouter>
   )
