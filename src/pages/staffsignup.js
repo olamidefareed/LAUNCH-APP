@@ -1,5 +1,6 @@
 import React from "react";
 import {BsCamera} from 'react-icons/bs'
+import { Link } from "react-router-dom";
 
 
 
@@ -14,7 +15,7 @@ function Staffsignup () {
                 <BsCamera/>
                 <p>Add Image</p>
             </button>
-            <div className="block mt-[50px]  p-[10px]">
+            <div className="block mt-[20px]  p-[10px]">
                 <form className="">
                     <label/>Firstname: <br/>
                     <input for = "name" type="text" className="w-[500px] h-[50px] border-2 rounded-md" placeholder="Enter first name"/><br/>
@@ -26,6 +27,11 @@ function Staffsignup () {
                     <input for = "name" type="number" className="w-[500px] h-[50px] border-2 rounded-md" placeholder="Enter phone number"/><br/>
                     <label/>Set Password: <br/>
                     <input for = "name" type="password" className="w-[500px] h-[50px] border-2 rounded-md" placeholder="set password"/>
+                    <footer className="p-[10px]">
+                        <Link to = '/staffverification'><button className="bg-green items-center text-center text-white border-2 rounded-2xl w-full h-[50px]">
+                            Sign Up
+                        </button></Link>
+                    </footer>
                 </form>
             </div>
         </div>

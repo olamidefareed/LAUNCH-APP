@@ -1,6 +1,8 @@
 import React from 'react'
 import {HiOutlineUserGroup} from 'react-icons/hi'
 import {GrOrganization} from 'react-icons/gr'
+import { Link } from 'react-router-dom'
+// import Staffsignup from './staffsignup'
 
 
 function SignUp() {
@@ -13,13 +15,13 @@ function SignUp() {
       <div className='text-black text-3xl text-center mt-[100px]'>
         Sign Up As:
       </div>
-      <div className='flex mt-[50px] gap-20 text-center'>
-        <button className='bg-white border-2 rounded-2xl text-black text-center text-3xl w-[300px] h-[200px] p-[50px]'>STAFF
+      <div className='flex mt-[50px] gap-20 text-center p-[30px]'>
+        <Link to ='/staffsignup' ><button className='bg-white border-2 rounded-2xl text-black text-center text-3xl w-[300px] h-[200px] p-[50px]'>STAFF
             <HiOutlineUserGroup className='w-[200px]'/>
-        </button>
-        <button className='bg-white border-2 rounded-2xl text-black text-center text-3xl w-[300px] h-[200px] p-[50px]'>ORGANIZATION
-          <GrOrganization className='w-[200px]'/>
-        </button>
+        </button></Link>
+        <Link to = '/companysignup' ><button className='bg-white border-2 rounded-2xl text-black text-center text-3xl w-[300px] h-[200px] p-[50px]'>ORGANIZATION
+            <GrOrganization className='w-[200px]'/>
+        </button></Link>
       </div>
     </div>
     
